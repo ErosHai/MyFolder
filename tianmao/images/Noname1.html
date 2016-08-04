@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+
+  <style>
+	/*水平垂直居中*/
+	.top{
+		width:100px;
+		height:100px;
+		background:red;
+		position:absolute; /*相对*/
+		/*left:50%;
+		margin-left:-50px;
+		top:50%;
+		margin-top:-50px;*/
+		margin:auto auto;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+
+
+		
+		
+	}
+	.top1{
+		width:500px;
+		height:500px;
+		background:blue;
+		margin:0 auto;
+		position:relative;
+	}
+	.top2{
+		width:50px;
+		height:50px;
+		position:fixed;
+		right:0;
+		top:0;
+		background:yellow;
+		*position:absolute;
+		*top:expression(eval(document.documentElement.scrollTop+0));
+	}
+	*html{
+		background-image:url(blank:about);
+		background-attachment:absolute;
+		}
+	
+  </style>
+ </head>
+
+ <body style="height:2000px;">
+	 
+	<div class="top1">
+		<div class="top">
+	
+		</div>
+	</div>
+	<div class="top2">
+	
+		</div>
+  
+ </body>
+</html>
